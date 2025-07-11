@@ -1,0 +1,10 @@
+.grid-row {
+  display: flex;
+  flex-direction: row;
+}
+.square {
+  background-color: "#c6c8cc";
+  width: "50px";
+  height: "60px";
+  border-style: "solid";
+}
