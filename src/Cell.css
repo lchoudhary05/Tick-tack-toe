@@ -3,8 +3,15 @@
   flex-direction: row;
 }
 .square {
-  background-color: "#c6c8cc";
-  width: "50px";
-  height: "60px";
-  border-style: "solid";
+  background-color: #c6c8cc;
+  width: 150px;
+  height: 150px;
+  border-style: solid;
+}
+.Mid {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

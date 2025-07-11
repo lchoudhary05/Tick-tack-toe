@@ -40,25 +40,27 @@ export default function App() {
 
   return (
     <>
-      {!winner && <h3>Next Turn:{turn}</h3>}
-      {winner && <h3>Winner:{winner}</h3>}
+      <div className="Mid">
+        {!winner && <h3>Next Turn:{turn}</h3>}
+        {winner && <h3>Winner:{winner}</h3>}
 
-      <div className="grid-row">
-        <Cell value={values[0]} setSquare={() => handleMove(0)} />
-        <Cell value={values[1]} setSquare={() => handleMove(1)} />
-        <Cell value={values[2]} setSquare={() => handleMove(2)} />
+        <div className="grid-row">
+          <Cell value={values[0]} setSquare={() => handleMove(0)} />
+          <Cell value={values[1]} setSquare={() => handleMove(1)} />
+          <Cell value={values[2]} setSquare={() => handleMove(2)} />
+        </div>
+        <div className="grid-row">
+          <Cell value={values[3]} setSquare={() => handleMove(3)} />
+          <Cell value={values[4]} setSquare={() => handleMove(4)} />
+          <Cell value={values[5]} setSquare={() => handleMove(5)} />
+        </div>
+        <div className="grid-row">
+          <Cell value={values[6]} setSquare={() => handleMove(6)} />
+          <Cell value={values[7]} setSquare={() => handleMove(7)} />
+          <Cell value={values[8]} setSquare={() => handleMove(8)} />
+        </div>
+        <button onClick={restart}>Restart</button>
       </div>
-      <div className="grid-row">
-        <Cell value={values[3]} setSquare={() => handleMove(3)} />
-        <Cell value={values[4]} setSquare={() => handleMove(4)} />
-        <Cell value={values[5]} setSquare={() => handleMove(5)} />
-      </div>
-      <div className="grid-row">
-        <Cell value={values[6]} setSquare={() => handleMove(6)} />
-        <Cell value={values[7]} setSquare={() => handleMove(7)} />
-        <Cell value={values[8]} setSquare={() => handleMove(8)} />
-      </div>
-      <button onClick={restart}>Restart</button>
     </>
   );
 }
